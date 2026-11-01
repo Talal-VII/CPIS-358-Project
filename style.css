@@ -87,7 +87,7 @@ input[type="reset"] {
   nav a {
     white-space: nowrap;
   }
-
+}
 input[type="email"],
 input[type="password"],
 input[type="text"] {
@@ -113,4 +113,35 @@ select {
     border-radius: 5px;
     background-color: white;
     font-size: 16px;
+}
+
+nav a:hover {
+    color: #f9a825;
+}
+
+h1 {
+    text-shadow: 2px 2px 3px #c8e6c9;
+}
+
+.card {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px #bbb;
+    padding: 10px 20px;
+    margin: 25px 0;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    z-index: 2;
+    background-color: #f9a825;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-weight: bold;
 }

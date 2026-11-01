@@ -4,6 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MajorMate - Major Details</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            table {
+                border-collapse: collapse;
+                background-color: white;
+                box-shadow: 3px 3px 10px #bbb;
+            }
+            th, td {
+                border: 1px solid #2e7d32;
+                padding: 10px 15px;
+            }
+            th {
+                background-color: #2e7d32;
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <!--header-->
@@ -30,6 +46,12 @@
         <main>
             <h1>Major Details</h1>
             <p>A detailed look at each major and their unique aspects.</p>
+            <ul>
+                <li><a href="#computer-science">Computer Science</a></li>
+                <li><a href="#information-technology">Information Technology</a></li>
+                <li><a href="#information-systems">Information Systems</a></li>
+                <li><a href="#universities">Where can you study them?</a></li>
+            </ul>
             <article id="computer-science">
                 <h2>Computer Science (CS)</h2>
                 <section>
@@ -193,7 +215,7 @@
                 </section>
             </article>
             <hr>
-            <section>
+            <section id="universities">
                 <h2>Where can you study them?</h2>
                 <table>
                     <caption>Universities offering these majors</caption>
