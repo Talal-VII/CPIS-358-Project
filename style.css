@@ -8,6 +8,9 @@ body {
 nav {
     background-color: #2e7d32;
     padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
 nav ul {
@@ -28,7 +31,8 @@ main {
     padding: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #2e7d32;
 }
 
@@ -76,25 +80,25 @@ input[type="reset"] {
     cursor: pointer;
 }
 @media (max-width: 600px) {
-  nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-    gap: 8px  15px;
-  }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        gap: 8px 15px;
+    }
 
-  nav a {
-    white-space: nowrap;
-  }
+    nav a {
+        white-space: nowrap;
+    }
 }
 input[type="email"],
 input[type="password"],
 input[type="text"] {
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 10px;
-  font-size: 16px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
 }
 
 input[type="email"],
@@ -115,28 +119,26 @@ select {
     font-size: 16px;
 }
 
-}
 body.dark-mode {
-  background-color: #1f1f1f;
-  color: white;
+    background-color: #1f1f1f;
+    color: white;
 }
 
 body.dark-mode #signupForm,
 body.dark-mode #loginForm {
-  background-color: #2d2d2d;
+    background-color: #2d2d2d;
 }
 
 body.dark-mode #signupError,
 body.dark-mode #loginError {
-  color: #ff9999;
+    color: #ff9999;
 }
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
-
 
 nav a:hover {
     color: #f9a825;
@@ -168,4 +170,26 @@ h1 {
     border-radius: 15px;
     font-weight: bold;
 }
- 
+
+body.dark-mode .card {
+    background-color: #2d2d2d;
+    border-color: #444;
+    box-shadow: 2px 2px 8px #000;
+}
+
+body.dark-mode table {
+    background-color: #2d2d2d;
+    border-color: #444;
+    box-shadow: 3px 3px 10px #000;
+}
+
+body.dark-mode h1 {
+    text-shadow: none;
+}
+
+nav button {
+    background-color: transparent;
+    padding: 0;
+    font-size: 20px;
+    margin-left: auto;
+}
