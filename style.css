@@ -114,3 +114,24 @@ select {
     background-color: white;
     font-size: 16px;
 }
+}
+body.dark-mode {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+body.dark-mode #signupForm,
+body.dark-mode #loginForm {
+  background-color: #2d2d2d;
+}
+
+body.dark-mode #signupError,
+body.dark-mode #loginError {
+  color: #ff9999;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
