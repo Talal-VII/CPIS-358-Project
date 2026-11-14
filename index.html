@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>MajorMate - Home</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <!--header-->
         <header>
-            <img src="images/MajorMate.png" alt="MajorMate Logo" width="400" height="120" usemap="#MajorMate">
+            <img src="images/MajorMate.png" alt="MajorMate Logo" width="400" height="120" usemap="#MajorMate" />
             <map name="MajorMate">
-                <area shape="rect" coords="0,0,400,120" href="about.html" alt="About us">
-            </map>    
+                <area shape="rect" coords="0,0,400,120" href="about.html" alt="About us" />
+            </map>
         </header>
 
         <!--nav-->
@@ -25,19 +25,27 @@
                 <li><a href="login.html">Login</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
             </ul>
+            <button id="themeBtn">🌙</button>
         </nav>
 
         <!--main-->
         <main>
             <h1>Welcome to MajorMate</h1>
+            <p id="greeting"></p>
             <p>Where we help you find the major that suits you best!</p>
             <section id="problem">
                 <h2>Not sure which major to choose?</h2>
-                <p>Many students including us struggle with finding the right major for ourselves and mostly just pick one based on what our parents want or what people say and might end up with a major we don't like.</p>
+                <p>
+                    Many students including us struggle with finding the right major for ourselves and mostly just pick
+                    one based on what our parents want or what people say and might end up with a major we don't like.
+                </p>
             </section>
             <section id="solution">
                 <h2>Our Solution</h2>
-                <p>MajorMate provides you with the tools and information you need to help you make an informed decision.</p>
+                <p>
+                    MajorMate provides you with the tools and information you need to help you make an informed
+                    decision.
+                </p>
             </section>
             <section id="benefits">
                 <h2>Benefits</h2>
@@ -47,7 +55,15 @@
                     <li>Saves time in researching college majors.</li>
                 </ul>
             </section>
-            <p style="text-align: center; font-size: 20px;"><a href="majors.html">Explore Majors</a></p>
+            <section id="meetMajors">
+                <h2>The Majors</h2>
+                <img id="majorImg" src="images/CS.png" alt="Computer Science" width="300" />
+                <p id="majorText">Love math and solving puzzles? Computer Science might be for you!</p>
+                <button id="nextBtn">Next Major</button>
+            </section>
+            <p style="text-align: center; font-size: 20px">
+                <a href="majors.html">Explore Majors</a>
+            </p>
         </main>
 
         <!--footer-->
@@ -55,5 +71,19 @@
             <p>&copy; 2026 MajorMate. All rights reserved.</p>
             <a href="mailto:team@example.com">Contact Us</a>
         </footer>
+        <script src="script.js"></script>
+        <script>
+            // Time Greeting
+            let hour = new Date().getHours();
+            let greeting = document.getElementById("greeting");
+
+            if (hour < 12) {
+                greeting.textContent = "Good morning!";
+            } else if (hour < 18) {
+                greeting.textContent = "Good afternoon!";
+            } else {
+                greeting.textContent = "Good evening!";
+            }
+        </script>
     </body>
 </html>

@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>MajorMate - Sign Up</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <!--header-->
         <header>
-            <img src="images/MajorMate.png" alt="MajorMate Logo" width="400" height="120" usemap="#MajorMate">
+            <img src="images/MajorMate.png" alt="MajorMate Logo" width="400" height="120" usemap="#MajorMate" />
             <map name="MajorMate">
-                <area shape="rect" coords="0,0,400,120" href="about.html" alt="About us">
-            </map>    
+                <area shape="rect" coords="0,0,400,120" href="about.html" alt="About us" />
+            </map>
         </header>
 
         <!--nav-->
@@ -25,32 +25,69 @@
                 <li><a href="login.html">Login</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
             </ul>
+            <button id="themeBtn">🌙</button>
         </nav>
 
         <!--main-->
         <main>
             <h1>Sign Up</h1>
-            <p>Happy to have you with us! Please fill out the form below to create your account:</p>
-            <form method="post" action="#">
-                <label>Full Name: <input type="text" name="fullname" placeholder="Ahmed Hassan" required></label><br>
-                <label>Email: <input type="email" name="email" placeholder="mail@example.com" required></label><br>
-                <label>Password: <input type="password" name="pwd" required></label><br>
-                <label>Date of Birth: <input type="date" name="dob"></label><br>
-                Gender: <br>
-                    <label><input type="radio" name="gender" value="male" required> Male </label><br>
-                    <label><input type="radio" name="gender" value="female"> Female </label><br>
-                <label>Major: 
+            <p id="signupIntro">Happy to have you with us! Please fill out the form below to create your account:</p>
+            <form method="post" action="#" id="signupForm">
+                <label>
+                    Full Name:
+                    <input type="text" name="fullname" id="fullname" placeholder="Ahmed Hassan" required />
+                </label>
+                <br />
+                <label>
+                    Email:
+                    <input type="email" name="email" id="email" placeholder="mail@example.com" required />
+                </label>
+                <br />
+                <label>
+                    Password:
+                    <input type="password" name="pwd" id="password" required />
+                </label>
+                <br />
+                <label>
+                    Confirm Password:
+                    <input type="password" name="confirmPwd" id="confirmPassword" required />
+                </label>
+                <br />
+                <label>
+                    Date of Birth:
+                    <input type="date" name="dob" id="dob" />
+                </label>
+                <br />
+                Gender:
+                <br />
+                <label>
+                    <input type="radio" name="gender" value="male" required />
+                    Male
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="gender" value="female" />
+                    Female
+                </label>
+                <br />
+                <label>
+                    Major:
                     <select name="major">
                         <option value="cs">Computer Science</option>
                         <option value="it">Information Technology</option>
                         <option value="is">Information Systems</option>
                         <option value="other">Not sure yet</option>
                     </select>
-                </label><br>
-                <input type="submit" value="Sign Up">
-                <input type="reset" value="Reset">
+                </label>
+                <br />
+                <p id="signupError"></p>
+                <input type="submit" value="Sign Up" />
+                <input type="reset" value="Reset" />
             </form>
-            <p>Already have an account? <a href="login.html">Log In</a></p>
+            <p>
+                Already have an account?
+                <a href="login.html">Log In</a>
+            </p>
         </main>
 
         <!--footer-->
@@ -58,5 +95,6 @@
             <p>&copy; 2026 MajorMate. All rights reserved.</p>
             <a href="mailto:team@example.com">Contact Us</a>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
